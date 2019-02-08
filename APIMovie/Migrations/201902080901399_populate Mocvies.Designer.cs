@@ -7,13 +7,13 @@ namespace APIMovie.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UpdateGenre : IMigrationMetadata
+    public sealed partial class populateMocvies : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateGenre));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(populateMocvies));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902071307034_UpdateGenre"; }
+            get { return "201902080901399_populate Mocvies"; }
         }
         
         string IMigrationMetadata.Source

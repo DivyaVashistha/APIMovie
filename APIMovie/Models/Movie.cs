@@ -13,6 +13,7 @@ namespace APIMovie.Models
         public string DateReleased { get; set; }
         public int Rating { get; set; }
         public Genre Genre { get; set; }
-        public byte GenreId { get; set; }
+        
+        
     }
 }
