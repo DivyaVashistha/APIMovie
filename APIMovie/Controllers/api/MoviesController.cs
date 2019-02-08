@@ -51,7 +51,15 @@ namespace APIMovie.Controllers.api
                 return BadRequest();
             }
 
-            db.Entry(movie).State = EntityState.Modified;
+            //db.Entry(movie).State = EntityState.Modified;
+
+            var data = db.Movie.Include(c => c.Genre).Where(c => c.Id == id).SingleOrDefault();
+            data.Name = movie.Name;
+            data.DateReleased = movie.DateReleased;
+            data.Description = movie.Description;
+            data.Genre.Id = movie.Genre.Id;
+            data.Rating = movie.Rating;
+            
 
             try
             {
