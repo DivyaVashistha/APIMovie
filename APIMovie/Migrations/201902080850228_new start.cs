@@ -3,7 +3,7 @@ namespace APIMovie.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialModel : DbMigration
+    public partial class newstart : DbMigration
     {
         public override void Up()
         {
@@ -25,7 +25,7 @@ namespace APIMovie.Migrations
                         Description = c.String(),
                         DateReleased = c.String(),
                         Rating = c.Int(nullable: false),
-                        GenreId = c.Byte(nullable: false),
+                      
                         Genre_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)

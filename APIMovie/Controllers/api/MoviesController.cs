@@ -21,14 +21,14 @@ namespace APIMovie.Controllers.api
         // GET: api/Movies
         public IQueryable<Movie> GetMovie()
         {
-            return db.Movie;
+            return db.Movie.Include(c=>c.Genre);
         }
 
         // GET: api/Movies/5
         [ResponseType(typeof(Movie))]
         public IHttpActionResult GetMovie(int id)
         {
-            Movie movie = db.Movie.Find(id);
+            Movie movie = db.Movie.Include(c=>c.Genre).Where(c=>c.Id==id).SingleOrDefault();
             if (movie == null)
             {
                 return NotFound();
@@ -80,7 +80,7 @@ namespace APIMovie.Controllers.api
             {
                 return BadRequest(ModelState);
             }
-
+            
             db.Movie.Add(movie);
             db.SaveChanges();
 

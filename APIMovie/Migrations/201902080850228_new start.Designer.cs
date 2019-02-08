@@ -7,13 +7,13 @@ namespace APIMovie.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class UpdateMovie : IMigrationMetadata
+    public sealed partial class newstart : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateMovie));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(newstart));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902071311548_UpdateMovie"; }
+            get { return "201902080850228_new start"; }
         }
         
         string IMigrationMetadata.Source

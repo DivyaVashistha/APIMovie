@@ -7,13 +7,13 @@ namespace APIMovie.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class InitialModel : IMigrationMetadata
+    public sealed partial class populategenre : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialModel));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(populategenre));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902071305380_InitialModel"; }
+            get { return "201902080854500_populate genre"; }
         }
         
         string IMigrationMetadata.Source

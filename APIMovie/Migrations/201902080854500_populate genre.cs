@@ -3,7 +3,7 @@ namespace APIMovie.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class UpdateGenre : DbMigration
+    public partial class populategenre : DbMigration
     {
         public override void Up()
         {
@@ -24,20 +24,7 @@ namespace APIMovie.Migrations
         
         public override void Down()
         {
-            Sql("DELETE FROM Genres WHERE Id=1");
-            Sql("DELETE FROM Genres WHERE Id=2");
-            Sql("DELETE FROM Genres WHERE Id=3");
-            Sql("DELETE FROM Genres WHERE Id=4");
-            Sql("DELETE FROM Genres WHERE Id=5");
-            Sql("DELETE FROM Genres WHERE Id=6");
-            Sql("DELETE FROM Genres WHERE Id=7");
-            Sql("DELETE FROM Genres WHERE Id=8");
-            Sql("DELETE FROM Genres WHERE Id=9");
-            Sql("DELETE FROM Genres WHERE Id=10");
-            Sql("DELETE FROM Genres WHERE Id=11");
-            Sql("DELETE FROM Genres WHERE Id=12");
-            Sql("DELETE FROM Genres WHERE Id=13");
-
+            
         }
     }
 }
